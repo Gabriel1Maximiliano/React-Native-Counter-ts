@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Text, TouchableOpacity, View,StyleSheet } from 'react-native'
+import { FloatingActionButton } from '../components/FloatingActionButton';
 
 export const CounterScreen = () => {
 
@@ -10,20 +11,23 @@ export const CounterScreen = () => {
         <Text style={styles.title} > Counter :
                  { counter }
         </Text>
-        <TouchableOpacity 
-        style={ styles.floatingActionButtonButtonRight }
-        onPress={ () => setCounter(  counter - 1 ) }>
-            <View style={styles.floatingActionButton} >
-                <Text style={ styles.floatingActionButtonTitle } >+1</Text>
-            </View>
-        </TouchableOpacity>
-        <TouchableOpacity 
+        <FloatingActionButton 
+        title='-1'
+        onPress={ () => setCounter( counter - 1 ) }
+        position='left'
+        />
+        <FloatingActionButton 
+        title='+1'
+        onPress={ () => setCounter( counter + 1 ) }
+        position='right'
+        />
+        {/* <TouchableOpacity 
         style={ styles.floatingActionButtonButtonLeft }
         onPress={ () => setCounter(  counter - 1 ) }>
             <View style={styles.floatingActionButton} >
                 <Text style={ styles.floatingActionButtonTitle } >-1</Text>
             </View>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
     </View>
   )
 }
@@ -39,30 +43,5 @@ const styles = StyleSheet.create({
         fontSize:45,
 
     },
-    floatingActionButtonButtonRight:{
-        position:'absolute',
-        bottom:25,
-        right:25
-    },
-    floatingActionButtonButtonLeft:{
-        position:'absolute',
-        bottom:25,
-        left:25
-    },
-    
-    floatingActionButton:{
-        color:'#5858d6',
-        width:60,
-        height:60,
-        borderRadius:100,
-        backgroundColor:'red',
-        justifyContent:'center'
-
-    },
-    floatingActionButtonTitle:{
-        color:'white',
-        fontSize:22,
-        fontWeight:'bold',
-        alignSelf:'center',
-    }
+   
 })
