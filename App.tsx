@@ -8,6 +8,7 @@ import { FlexScreen } from './src/screens/FlexScreen';
 import { TaskScreen } from './src/screens/TaskScreen';
 import { Task1Screen } from './src/screens/Task1Screen';
 import { Task2Screen } from './src/screens/Task2Screen';
+import { Task3Screen } from './src/screens/Task3creen';
 
 
 
@@ -25,7 +26,8 @@ const App = () => {
     <SafeAreaView  style={ { flex:1 } } >
 {/* <BoxObjectModelScreen /> */}
  {/* <Task1Screen /> */}
- <Task2Screen />
+ {/* <Task2Screen /> */}
+ <Task3Screen />
     </SafeAreaView>
 /* <CounterScreen /> */
   )
