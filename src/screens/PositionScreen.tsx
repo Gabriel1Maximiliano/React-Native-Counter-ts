@@ -29,10 +29,6 @@ const styles = StyleSheet.create({
         borderColor:'white',
         right:0,
         bottom:0
-    
-   
-       
-       
      
     },
     orangeBox:{
@@ -42,9 +38,9 @@ const styles = StyleSheet.create({
         borderWidth:10,
         borderColor:'red',
         position:"absolute",
-        right:0,
-        top:0
-       
+        bottom:0,
+        left:0
+        
      
      
     }
