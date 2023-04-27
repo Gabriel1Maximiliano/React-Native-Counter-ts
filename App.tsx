@@ -10,6 +10,7 @@ import { Task1Screen } from './src/screens/Task1Screen';
 import { Task2Screen } from './src/screens/Task2Screen';
 import { Task3Screen } from './src/screens/Task3creen';
 import { Task4Screen } from './src/screens/Task4Screen';
+import { Task5Screen } from './src/screens/Task5Screen';
 
 
 
@@ -29,7 +30,9 @@ const App = () => {
  {/* <Task1Screen /> */}
  {/* <Task2Screen /> */}
  {/* <Task3Screen /> */}
- <Task4Screen />
+ {/* <Task4Screen /> */}
+ <Task5Screen />
+ 
     </SafeAreaView>
 /* <CounterScreen /> */
   )
