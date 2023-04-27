@@ -9,6 +9,7 @@ import { TaskScreen } from './src/screens/TaskScreen';
 import { Task1Screen } from './src/screens/Task1Screen';
 import { Task2Screen } from './src/screens/Task2Screen';
 import { Task3Screen } from './src/screens/Task3creen';
+import { Task4Screen } from './src/screens/Task4Screen';
 
 
 
@@ -27,7 +28,8 @@ const App = () => {
 {/* <BoxObjectModelScreen /> */}
  {/* <Task1Screen /> */}
  {/* <Task2Screen /> */}
- <Task3Screen />
+ {/* <Task3Screen /> */}
+ <Task4Screen />
     </SafeAreaView>
 /* <CounterScreen /> */
   )
